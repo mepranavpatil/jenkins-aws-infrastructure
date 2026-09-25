@@ -1,0 +1,120 @@
+# =========================
+# Terraform
+# =========================
+
+.terraform/
+.terraform.lock.hcl
+
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+*.tfvars
+*.tfvars.json
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+.terraformrc
+terraform.rc
+
+
+# =========================
+# Secrets / Credentials
+# =========================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+credentials.json
+secrets.json
+
+# AWS credentials
+.aws/
+.aws/credentials
+
+
+# =========================
+# Jenkins
+# =========================
+
+jenkins_home/
+jenkins_home/**
+jenkins-data/
+jenkins-data/**
+
+# Jenkins secrets/config generated locally
+secrets/
+jenkins.yaml
+
+# Jenkins logs
+jenkins.log
+*.log
+
+
+# =========================
+# Docker
+# =========================
+
+docker-compose.override.yml
+
+# Docker local data
+docker-data/
+docker-volumes/
+
+# Docker logs
+docker-logs/
+*.docker.log
+
+
+# =========================
+# SSH
+# =========================
+
+.ssh/
+id_rsa
+id_rsa.pub
+*.pem
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
+# =========================
+# IDE / Editors
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# VS Code local settings
+.history/
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
